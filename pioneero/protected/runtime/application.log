@@ -1,0 +1,634 @@
+2012/11/07 19:04:17 [error] [php] file_put_contents(/var/www/yii/pioneero/protected/runtime/gii-1.1.12/ModelCode.php): failed to open stream: Permission denied (/var/www/yii/framework/gii/CCodeModel.php:387)
+Stack trace:
+#0 /var/www/yii/framework/gii/CCodeGenerator.php(64): ModelGenerator->prepare()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(50): ModelGenerator->actionIndex()
+#2 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(287): ModelGenerator->runAction()
+#4 /var/www/yii/framework/web/CController.php(266): ModelGenerator->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(283): ModelGenerator->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/yii/pioneero/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/pioneero/index.php?r=gii/model
+in /var/www/yii/pioneero/index.php (13)
+2012/11/08 18:04:44 [error] [php] Undefined variable: titile (/var/www/yii/pioneero/protected/views/home/index.php:2)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(870): HomeController->renderFile()
+#1 /var/www/yii/pioneero/protected/controllers/HomeController.php(23): HomeController->renderPartial()
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(50): HomeController->actionIndex()
+#3 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /var/www/yii/framework/web/CController.php(287): HomeController->runAction()
+#5 /var/www/yii/framework/web/CController.php(266): HomeController->runActionWithFilters()
+#6 /var/www/yii/framework/web/CWebApplication.php(283): HomeController->run()
+#7 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#8 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/yii/pioneero/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/pioneero/index.php?r=home
+in /var/www/yii/pioneero/protected/views/home/index.php (2)
+in /var/www/yii/pioneero/protected/controllers/HomeController.php (23)
+in /var/www/yii/pioneero/index.php (13)
+2012/11/08 18:05:37 [error] [exception.CException] exception 'CException' with message 'HomeController cannot find the requested view "common/links".' in /var/www/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/yii/pioneero/protected/views/home/index.php(2): CController->renderPartial('common/links', Array)
+#1 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/pi...')
+#2 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/pi...', NULL, true)
+#3 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/pi...', NULL, true)
+#4 /var/www/yii/pioneero/protected/controllers/HomeController.php(23): CController->renderPartial('index')
+#5 /var/www/yii/framework/web/actions/CInlineAction.php(50): HomeController->actionIndex()
+#6 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#7 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#8 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/yii/framework/web/CWebApplication.php(283): CController->run('')
+#10 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('home')
+#11 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=home
+---
+2012/11/08 18:08:07 [error] [exception.CException] exception 'CException' with message 'HomeController cannot find the requested view "common/links".' in /var/www/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(783): CController->renderPartial('common/links', Array, true)
+#1 /var/www/yii/pioneero/protected/views/home/index.php(2): CController->render('common/links', Array)
+#2 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/pi...')
+#3 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/pi...', NULL, true)
+#4 /var/www/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/yii/pi...', NULL, true)
+#5 /var/www/yii/pioneero/protected/controllers/HomeController.php(23): CController->renderPartial('index')
+#6 /var/www/yii/framework/web/actions/CInlineAction.php(50): HomeController->actionIndex()
+#7 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/yii/framework/web/CWebApplication.php(283): CController->run('')
+#11 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('home')
+#12 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=home
+---
+2012/11/08 18:08:48 [error] [php] Undefined variable: title (/var/www/yii/pioneero/protected/views/home/links.php:13)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(870): HomeController->renderFile()
+#1 /var/www/yii/framework/web/CController.php(783): HomeController->renderPartial()
+#2 /var/www/yii/pioneero/protected/views/home/index.php(2): HomeController->render()
+#3 /var/www/yii/framework/web/CBaseController.php(127): require()
+#4 /var/www/yii/framework/web/CBaseController.php(96): HomeController->renderInternal()
+#5 /var/www/yii/framework/web/CController.php(870): HomeController->renderFile()
+#6 /var/www/yii/pioneero/protected/controllers/HomeController.php(23): HomeController->renderPartial()
+#7 /var/www/yii/framework/web/actions/CInlineAction.php(50): HomeController->actionIndex()
+#8 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#9 /var/www/yii/framework/web/CController.php(287): HomeController->runAction()
+#10 /var/www/yii/framework/web/CController.php(266): HomeController->runActionWithFilters()
+#11 /var/www/yii/framework/web/CWebApplication.php(283): HomeController->run()
+#12 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#13 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/yii/pioneero/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/pioneero/index.php?r=home
+in /var/www/yii/pioneero/protected/views/home/links.php (13)
+in /var/www/yii/pioneero/protected/views/home/index.php (2)
+in /var/www/yii/pioneero/protected/controllers/HomeController.php (23)
+2012/11/08 18:10:29 [error] [php] Undefined variable: title (/var/www/yii/pioneero/protected/views/home/links.php:13)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(870): HomeController->renderFile()
+#1 /var/www/yii/pioneero/protected/views/home/index.php(2): HomeController->renderPartial()
+#2 /var/www/yii/framework/web/CBaseController.php(127): require()
+#3 /var/www/yii/framework/web/CBaseController.php(96): HomeController->renderInternal()
+#4 /var/www/yii/framework/web/CController.php(870): HomeController->renderFile()
+#5 /var/www/yii/pioneero/protected/controllers/HomeController.php(23): HomeController->renderPartial()
+#6 /var/www/yii/framework/web/actions/CInlineAction.php(50): HomeController->actionIndex()
+#7 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#8 /var/www/yii/framework/web/CController.php(287): HomeController->runAction()
+#9 /var/www/yii/framework/web/CController.php(266): HomeController->runActionWithFilters()
+#10 /var/www/yii/framework/web/CWebApplication.php(283): HomeController->run()
+#11 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#12 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/yii/pioneero/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/pioneero/index.php?r=home
+in /var/www/yii/pioneero/protected/views/home/links.php (13)
+in /var/www/yii/pioneero/protected/views/home/index.php (2)
+in /var/www/yii/pioneero/protected/controllers/HomeController.php (23)
+2012/11/08 19:41:52 [error] [exception.CException] exception 'CException' with message 'Object configuration must be an array containing a "class" element.' in /var/www/yii/framework/YiiBase.php:195
+Stack trace:
+#0 /var/www/yii/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#1 /var/www/yii/framework/base/CModule.php(104): CModule->getComponent('homeUrl')
+#2 /var/www/yii/framework/gii/views/layouts/main.php(38): CModule->__get('homeUrl')
+#3 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/fr...')
+#4 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/fr...', Array, true)
+#5 /var/www/yii/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/var/www/yii/fr...', Array, true)
+#6 /var/www/yii/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div class="con...')
+#7 /var/www/yii/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div class="con...')
+#8 /var/www/yii/framework/web/CBaseController.php(207): COutputProcessor->run()
+#9 /var/www/yii/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#10 /var/www/yii/framework/gii/views/layouts/column1.php(7): CBaseController->endContent()
+#11 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/fr...')
+#12 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/fr...', Array, true)
+#13 /var/www/yii/framework/web/CController.php(785): CBaseController->renderFile('/var/www/yii/fr...', Array, true)
+#14 /var/www/yii/framework/gii/controllers/DefaultController.php(47): CController->render('login', Array)
+#15 /var/www/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionLogin()
+#16 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#17 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#18 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /var/www/yii/framework/web/CWebApplication.php(283): CController->run('login')
+#20 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/default/log...')
+#21 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#22 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=gii/default/login
+---
+2012/11/08 19:45:19 [error] [exception.CException] exception 'CException' with message 'Object configuration must be an array containing a "class" element.' in /var/www/yii/framework/YiiBase.php:195
+Stack trace:
+#0 /var/www/yii/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#1 /var/www/yii/framework/base/CModule.php(104): CModule->getComponent('homeUrl')
+#2 /var/www/yii/framework/gii/views/layouts/main.php(38): CModule->__get('homeUrl')
+#3 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/fr...')
+#4 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/fr...', Array, true)
+#5 /var/www/yii/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/var/www/yii/fr...', Array, true)
+#6 /var/www/yii/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div class="con...')
+#7 /var/www/yii/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div class="con...')
+#8 /var/www/yii/framework/web/CBaseController.php(207): COutputProcessor->run()
+#9 /var/www/yii/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#10 /var/www/yii/framework/gii/views/layouts/column1.php(7): CBaseController->endContent()
+#11 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/fr...')
+#12 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/fr...', Array, true)
+#13 /var/www/yii/framework/web/CController.php(785): CBaseController->renderFile('/var/www/yii/fr...', Array, true)
+#14 /var/www/yii/framework/gii/controllers/DefaultController.php(47): CController->render('login', Array)
+#15 /var/www/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionLogin()
+#16 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#17 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#18 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /var/www/yii/framework/web/CWebApplication.php(283): CController->run('login')
+#20 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/default/log...')
+#21 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#22 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=gii/default/login
+---
+2012/11/08 19:51:16 [error] [exception.CException] exception 'CException' with message 'Object configuration must be an array containing a "class" element.' in /var/www/yii/framework/YiiBase.php:195
+Stack trace:
+#0 /var/www/yii/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#1 /var/www/yii/framework/base/CModule.php(104): CModule->getComponent('homeUrl')
+#2 /var/www/yii/framework/gii/views/layouts/main.php(38): CModule->__get('homeUrl')
+#3 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/fr...')
+#4 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/fr...', Array, true)
+#5 /var/www/yii/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/var/www/yii/fr...', Array, true)
+#6 /var/www/yii/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div class="con...')
+#7 /var/www/yii/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div class="con...')
+#8 /var/www/yii/framework/web/CBaseController.php(207): COutputProcessor->run()
+#9 /var/www/yii/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#10 /var/www/yii/framework/gii/views/layouts/column1.php(7): CBaseController->endContent()
+#11 /var/www/yii/framework/web/CBaseController.php(127): require('/var/www/yii/fr...')
+#12 /var/www/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/yii/fr...', Array, true)
+#13 /var/www/yii/framework/web/CController.php(785): CBaseController->renderFile('/var/www/yii/fr...', Array, true)
+#14 /var/www/yii/framework/gii/controllers/DefaultController.php(47): CController->render('login', Array)
+#15 /var/www/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionLogin()
+#16 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#17 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#18 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /var/www/yii/framework/web/CWebApplication.php(283): CController->run('login')
+#20 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/default/log...')
+#21 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#22 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=gii/default/login
+---
+2012/11/08 19:53:50 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pioneero.joins' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `joins`.
+in /var/www/yii/pioneero/index.php (13)
+2012/11/08 20:11:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "join".' in /var/www/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(271): CController->missingAction('join')
+#1 /var/www/yii/framework/web/CWebApplication.php(283): CController->run('join')
+#2 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('home/join')
+#3 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=home/join
+---
+2012/11/08 20:36:25 [error] [exception.CException] exception 'CException' with message 'Alias "application.extensions.email.debug" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/yii/framework/web/CWidgetFactory.php(147): YiiBase::import('application.ext...', true)
+#1 /var/www/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(HomeController), 'application.ext...', Array)
+#2 /var/www/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('application.ext...', Array)
+#3 /var/www/yii/pioneero/protected/controllers/HomeController.php(59): CBaseController->widget('application.ext...')
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(50): HomeController->actionSend()
+#5 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(283): CController->run('send')
+#9 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('home/send')
+#10 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=home/send
+---
+2012/11/08 20:37:24 [error] [exception.CException] exception 'CException' with message 'Alias "application.extensions.email.Email" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(198): YiiBase::import('application.ext...', true)
+#1 /var/www/yii/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(104): CModule->getComponent('email')
+#3 /var/www/yii/pioneero/protected/controllers/HomeController.php(60): CModule->__get('email')
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(50): HomeController->actionSend()
+#5 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(283): CController->run('send')
+#9 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('home/send')
+#10 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=home/send
+---
+2012/11/08 20:42:50 [error] [exception.CException] exception 'CException' with message 'Alias "application.extensions.email.debug" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/yii/framework/web/CWidgetFactory.php(147): YiiBase::import('application.ext...', true)
+#1 /var/www/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(HomeController), 'application.ext...', Array)
+#2 /var/www/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('application.ext...', Array)
+#3 /var/www/yii/pioneero/protected/controllers/HomeController.php(59): CBaseController->widget('application.ext...')
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(50): HomeController->actionSend()
+#5 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(283): CController->run('send')
+#9 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('home/send')
+#10 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=home/send
+---
+2012/11/08 20:43:03 [error] [exception.CException] exception 'CException' with message 'Alias "protected.extensions.email.debug" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:343
+Stack trace:
+#0 /var/www/yii/framework/web/CWidgetFactory.php(147): YiiBase::import('protected.exten...', true)
+#1 /var/www/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(HomeController), 'protected.exten...', Array)
+#2 /var/www/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('protected.exten...', Array)
+#3 /var/www/yii/pioneero/protected/controllers/HomeController.php(59): CBaseController->widget('protected.exten...')
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(50): HomeController->actionSend()
+#5 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(283): CController->run('send')
+#9 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('home/send')
+#10 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=home/send
+---
+2012/11/08 20:47:18 [error] [exception.CException] exception 'CException' with message 'Alias "protected.extensions.email.debug" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:343
+Stack trace:
+#0 /var/www/yii/framework/web/CWidgetFactory.php(147): YiiBase::import('protected.exten...', true)
+#1 /var/www/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(HomeController), 'protected.exten...', Array)
+#2 /var/www/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('protected.exten...', Array)
+#3 /var/www/yii/pioneero/protected/controllers/HomeController.php(59): CBaseController->widget('protected.exten...')
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(50): HomeController->actionSend()
+#5 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(283): CController->run('send')
+#9 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('home/send')
+#10 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=home/send
+---
+2012/11/09 13:07:49 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pioneero.SendEmail' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `SendEmail`.
+in /var/www/yii/pioneero/protected/controllers/HomeController.php (83)
+in /var/www/yii/pioneero/index.php (13)
+2012/11/09 13:07:49 [error] [exception.CDbException] exception 'CDbException' with message 'The table "SendEmail" for active record class "SendEmail" cannot be found in the database.' in /var/www/yii/framework/db/ar/CActiveRecord.php:2312
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(SendEmail))
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(403): CActiveRecord::model('SendEmail')
+#2 /var/www/yii/framework/db/ar/CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 /var/www/yii/pioneero/protected/controllers/HomeController.php(83): CActiveRecord->__construct()
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(50): HomeController->actionSend()
+#5 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(283): CController->run('send')
+#9 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('home/send')
+#10 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=home/send
+---
+2012/11/09 13:08:15 [error] [php] Undefined index: Subject (/var/www/yii/pioneero/protected/models/SendEmail.php:32)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /var/www/yii/framework/web/CController.php(287): HomeController->runAction()
+#2 /var/www/yii/framework/web/CController.php(266): HomeController->runActionWithFilters()
+#3 /var/www/yii/framework/web/CWebApplication.php(283): HomeController->run()
+#4 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#5 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/yii/pioneero/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/pioneero/index.php?r=home/send
+in /var/www/yii/pioneero/protected/models/SendEmail.php (32)
+in /var/www/yii/pioneero/protected/controllers/HomeController.php (84)
+in /var/www/yii/pioneero/index.php (13)
+2012/11/09 14:40:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "register".' in /var/www/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('register')
+#1 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=register
+---
+2012/11/09 14:40:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "register".' in /var/www/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('register')
+#1 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=register
+HTTP_REFERER=http://192.168.1.222/yii/pioneero/index.php?r=register
+---
+2012/11/09 14:40:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "register".' in /var/www/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('register')
+#1 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=register
+---
+2012/11/09 14:40:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "register".' in /var/www/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('register')
+#1 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=register
+HTTP_REFERER=http://192.168.1.222/yii/pioneero/index.php?r=register
+---
+2012/11/09 14:58:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create_message.php".' in /var/www/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(271): CController->missingAction('create_message....')
+#1 /var/www/yii/framework/web/CWebApplication.php(283): CController->run('create_message....')
+#2 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('home/create_mes...')
+#3 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=home/create_message.php
+---
+2012/11/09 14:58:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create_message.php".' in /var/www/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(271): CController->missingAction('create_message....')
+#1 /var/www/yii/framework/web/CWebApplication.php(283): CController->run('create_message....')
+#2 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('home/create_mes...')
+#3 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=home/create_message.php
+HTTP_REFERER=http://192.168.1.222/yii/pioneero/index.php?r=home/create_message.php
+---
+2012/11/09 16:26:06 [error] [php] Undefined index: password (/var/www/yii/pioneero/protected/controllers/HomeController.php:48)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(287): HomeController->runAction()
+#1 /var/www/yii/framework/web/CController.php(266): HomeController->runActionWithFilters()
+#2 /var/www/yii/framework/web/CWebApplication.php(283): HomeController->run()
+#3 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/yii/pioneero/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/pioneero/index.php?r=home/register
+in /var/www/yii/pioneero/protected/controllers/HomeController.php (48)
+in /var/www/yii/pioneero/index.php (13)
+2012/11/09 16:26:35 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`pioneero`.`users_interests`, CONSTRAINT `FK_users_interests_interests` FOREIGN KEY (`interests_id`) REFERENCES `interests` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `users_interests` (`users_id`, `interests_id`) VALUES (:yp0, :yp1).
+in /var/www/yii/pioneero/protected/controllers/HomeController.php (53)
+in /var/www/yii/pioneero/index.php (13)
+2012/11/09 16:26:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`pioneero`.`users_interests`, CONSTRAINT `FK_users_interests_interests` FOREIGN KEY (`interests_id`) REFERENCES `interests` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `users_interests` (`users_id`, `interests_id`) VALUES (:yp0, :yp1)' in /var/www/yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(1017): CDbCommand->execute()
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#2 /var/www/yii/pioneero/protected/controllers/HomeController.php(53): CActiveRecord->save()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(50): HomeController->actionRegister()
+#4 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(283): CController->run('register')
+#8 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('home/register')
+#9 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=home/register
+HTTP_REFERER=http://192.168.1.222/yii/pioneero/index.php?r=home/register
+---
+2012/11/09 16:26:50 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`pioneero`.`users_interests`, CONSTRAINT `FK_users_interests_interests` FOREIGN KEY (`interests_id`) REFERENCES `interests` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `users_interests` (`users_id`, `interests_id`) VALUES (:yp0, :yp1).
+in /var/www/yii/pioneero/protected/controllers/HomeController.php (53)
+in /var/www/yii/pioneero/index.php (13)
+2012/11/09 16:26:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`pioneero`.`users_interests`, CONSTRAINT `FK_users_interests_interests` FOREIGN KEY (`interests_id`) REFERENCES `interests` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `users_interests` (`users_id`, `interests_id`) VALUES (:yp0, :yp1)' in /var/www/yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(1017): CDbCommand->execute()
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#2 /var/www/yii/pioneero/protected/controllers/HomeController.php(53): CActiveRecord->save()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(50): HomeController->actionRegister()
+#4 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(283): CController->run('register')
+#8 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('home/register')
+#9 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=home/register
+HTTP_REFERER=http://192.168.1.222/yii/pioneero/index.php?r=home/register
+---
+2012/11/09 16:27:13 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`pioneero`.`users_interests`, CONSTRAINT `FK_users_interests_interests` FOREIGN KEY (`interests_id`) REFERENCES `interests` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `users_interests` (`users_id`, `interests_id`) VALUES (:yp0, :yp1).
+in /var/www/yii/pioneero/protected/controllers/HomeController.php (53)
+in /var/www/yii/pioneero/index.php (13)
+2012/11/09 16:27:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`pioneero`.`users_interests`, CONSTRAINT `FK_users_interests_interests` FOREIGN KEY (`interests_id`) REFERENCES `interests` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `users_interests` (`users_id`, `interests_id`) VALUES (:yp0, :yp1)' in /var/www/yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(1017): CDbCommand->execute()
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#2 /var/www/yii/pioneero/protected/controllers/HomeController.php(53): CActiveRecord->save()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(50): HomeController->actionRegister()
+#4 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(283): CController->run('register')
+#8 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('home/register')
+#9 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=home/register
+HTTP_REFERER=http://192.168.1.222/yii/pioneero/index.php?r=home/register
+---
+2012/11/09 17:20:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "forgot_password".' in /var/www/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(271): CController->missingAction('forgot_password')
+#1 /var/www/yii/framework/web/CWebApplication.php(283): CController->run('forgot_password')
+#2 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('home/forgot_pas...')
+#3 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=home/forgot_password
+HTTP_REFERER=http://192.168.1.222/yii/pioneero/index.php?r=home
+---
+2012/11/09 17:20:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "forgot_password".' in /var/www/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(271): CController->missingAction('forgot_password')
+#1 /var/www/yii/framework/web/CWebApplication.php(283): CController->run('forgot_password')
+#2 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('home/forgot_pas...')
+#3 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=home/forgot_password
+HTTP_REFERER=http://192.168.1.222/yii/pioneero/index.php?r=home/forgot_password
+---
+2012/11/09 17:20:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "forgot_password".' in /var/www/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(271): CController->missingAction('forgot_password')
+#1 /var/www/yii/framework/web/CWebApplication.php(283): CController->run('forgot_password')
+#2 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('home/forgot_pas...')
+#3 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=home/forgot_password
+HTTP_REFERER=http://192.168.1.222/yii/pioneero/index.php?r=home
+---
+2012/11/09 17:20:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "forgot_password".' in /var/www/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(271): CController->missingAction('forgot_password')
+#1 /var/www/yii/framework/web/CWebApplication.php(283): CController->run('forgot_password')
+#2 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('home/forgot_pas...')
+#3 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=home/forgot_password
+HTTP_REFERER=http://192.168.1.222/yii/pioneero/index.php?r=home/forgot_password
+---
+2012/11/09 17:21:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "forgot_password".' in /var/www/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(271): CController->missingAction('forgot_password')
+#1 /var/www/yii/framework/web/CWebApplication.php(283): CController->run('forgot_password')
+#2 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('home/forgot_pas...')
+#3 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=home/forgot_password
+HTTP_REFERER=http://192.168.1.222/yii/pioneero/index.php?r=home
+---
+2012/11/09 17:21:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "forgot_password".' in /var/www/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(271): CController->missingAction('forgot_password')
+#1 /var/www/yii/framework/web/CWebApplication.php(283): CController->run('forgot_password')
+#2 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('home/forgot_pas...')
+#3 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=home/forgot_password
+HTTP_REFERER=http://192.168.1.222/yii/pioneero/index.php?r=home/forgot_password
+---
+2012/11/09 17:22:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /var/www/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(271): CController->missingAction('login')
+#1 /var/www/yii/framework/web/CWebApplication.php(283): CController->run('login')
+#2 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('home/login')
+#3 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=home/login
+---
+2012/11/09 17:22:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /var/www/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(271): CController->missingAction('login')
+#1 /var/www/yii/framework/web/CWebApplication.php(283): CController->run('login')
+#2 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('home/login')
+#3 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=home/login
+HTTP_REFERER=http://192.168.1.222/yii/pioneero/index.php?r=home/login
+---
+2012/11/09 17:24:39 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pioneero.user' doesn't exist. The SQL statement executed was: SELECT `email`, `password`
+FROM `user` `u`
+WHERE id=:id.
+in /var/www/yii/pioneero/protected/controllers/HomeController.php (106)
+in /var/www/yii/pioneero/index.php (13)
+2012/11/09 17:24:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pioneero.user' doesn't exist. The SQL statement executed was: SELECT `email`, `password`
+FROM `user` `u`
+WHERE id=:id' in /var/www/yii/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /var/www/yii/framework/db/CDbCommand.php(408): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /var/www/yii/pioneero/protected/controllers/HomeController.php(106): CDbCommand->queryRow()
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(50): HomeController->actionSend()
+#3 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/yii/framework/web/CWebApplication.php(283): CController->run('send')
+#7 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('home/send')
+#8 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=home/send
+---
+2012/11/09 17:35:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('login')
+#1 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=login
+---
+2012/11/09 17:35:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('login')
+#1 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=login
+HTTP_REFERER=http://192.168.1.222/yii/pioneero/index.php?r=login
+---
+2012/11/09 17:56:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(271): CController->missingAction('about')
+#1 /var/www/yii/framework/web/CWebApplication.php(283): CController->run('about')
+#2 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('home/about')
+#3 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=home/about
+---
+2012/11/09 17:56:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(271): CController->missingAction('about')
+#1 /var/www/yii/framework/web/CWebApplication.php(283): CController->run('about')
+#2 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('home/about')
+#3 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/yii/pioneero/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/pioneero/index.php?r=home/about
+HTTP_REFERER=http://192.168.1.222/yii/pioneero/index.php?r=home/about
+---
+2012/11/09 18:32:50 [error] [php] trim() expects parameter 1 to be string, array given (/var/www/yii/framework/web/CUrlManager.php:295)
+Stack trace:
+#0 /var/www/yii/framework/base/CApplication.php(537): CWebApplication->createUrl()
+#1 /var/www/yii/pioneero/protected/views/home/login.php(27): CWebApplication->createAbsoluteUrl()
+#2 /var/www/yii/framework/web/CBaseController.php(127): require()
+#3 /var/www/yii/framework/web/CBaseController.php(96): HomeController->renderInternal()
+#4 /var/www/yii/framework/web/CController.php(870): HomeController->renderFile()
+#5 /var/www/yii/pioneero/protected/controllers/HomeController.php(138): HomeController->renderPartial()
+#6 /var/www/yii/framework/web/actions/CInlineAction.php(50): HomeController->actionLogin()
+#7 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#8 /var/www/yii/framework/web/CController.php(287): HomeController->runAction()
+#9 /var/www/yii/framework/web/CController.php(266): HomeController->runActionWithFilters()
+#10 /var/www/yii/framework/web/CWebApplication.php(283): HomeController->run()
+#11 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#12 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/yii/pioneero/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/pioneero/index.php?r=home/login
+in /var/www/yii/pioneero/protected/views/home/login.php (27)
+in /var/www/yii/pioneero/protected/controllers/HomeController.php (138)
+in /var/www/yii/pioneero/index.php (13)
+2012/11/09 18:32:50 [error] [php] trim() expects parameter 1 to be string, array given (/var/www/yii/framework/web/CUrlManager.php:295)
+Stack trace:
+#0 /var/www/yii/framework/base/CApplication.php(537): CWebApplication->createUrl()
+#1 /var/www/yii/pioneero/protected/views/home/login.php(27): CWebApplication->createAbsoluteUrl()
+#2 /var/www/yii/framework/web/CBaseController.php(127): require()
+#3 /var/www/yii/framework/web/CBaseController.php(96): HomeController->renderInternal()
+#4 /var/www/yii/framework/web/CController.php(870): HomeController->renderFile()
+#5 /var/www/yii/pioneero/protected/controllers/HomeController.php(138): HomeController->renderPartial()
+#6 /var/www/yii/framework/web/actions/CInlineAction.php(50): HomeController->actionLogin()
+#7 /var/www/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#8 /var/www/yii/framework/web/CController.php(287): HomeController->runAction()
+#9 /var/www/yii/framework/web/CController.php(266): HomeController->runActionWithFilters()
+#10 /var/www/yii/framework/web/CWebApplication.php(283): HomeController->run()
+#11 /var/www/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#12 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/yii/pioneero/index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/pioneero/index.php?r=home/login
+in /var/www/yii/pioneero/protected/views/home/login.php (27)
+in /var/www/yii/pioneero/protected/controllers/HomeController.php (138)
+in /var/www/yii/pioneero/index.php (13)

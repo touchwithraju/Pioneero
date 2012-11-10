@@ -1,0 +1,164 @@
+/* created date: 29-10-12 by Balaji */
+/*styles for responsive design created date: 2-11-12 by balaji*/
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.visible-phone {
+  display: none !important;
+}
+
+.visible-tablet {
+  display: none !important;
+}
+
+.hidden-desktop {
+  display: none !important;
+}
+
+.visible-desktop {
+  display: inherit !important;
+}
+
+
+
+/* Tablet*/
+@media (max-width: 800px){
+	body{
+		width: 798px;
+	}
+	.container{
+		width: 798px !important;
+	}
+	.pio .middle_ca .solutions .col{
+		float: none;
+		margin: 0 auto 20px !important;
+	}
+}
+@media (max-width: 767px) {
+	body{
+		width: 767px;
+	}
+	.container{
+		width: 767px !important;
+	}
+}
+@media (max-width: 600px){
+	body{
+		width: 600px;
+	}
+	.container{
+		width: 600px !important;
+	}
+	.pio .middle_ca .solutions .col{
+		float: none;
+		margin: 0 auto 30px !important;
+	}		
+
+}
+
+@media (max-width: 480px) {
+	
+	body{
+		width: 480px;
+	}
+	.container{
+		width: 460px !important;
+	}
+	.pio .middle_ca .hdr_title{
+		width: 460px;
+		margin-left: -230px;
+		font-size: 22px;
+	}
+	
+	.pio .middle_ca .solutions .col{
+		float: none;
+		margin: 0 auto 30px !important;
+	}		
+
+}
+
+@media screen and (max-width: 320px){
+	
+	body{
+		width: 320px;
+	}
+	.pio .navbar-inner{
+		padding: 0;
+	}
+	.container{
+		width: 300px !important;
+	}
+	.pio .navbar.header .logo{
+		margin-left: 10px;
+	}
+	.pio .navbar.header .list_about{
+		margin-left: 12px;
+	}
+	.pio .navigation{
+		margin-right: 5px; 
+	}
+	.pio .middle_ca .hdr_title{
+		width: 300px;
+		margin-left: -150px;
+	}
+	.pio .line{
+		margin: 0 6px;
+	}
+	.pio .middle_ca .solutions .col{
+		margin-left: 0 !important;
+	}
+	
+	
+	/* register page */  
+	.pio .navlist{
+		width: 298px;
+	}
+	.pio .register_ca > ul{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+	.pio input.input_long{
+		width: 285px;
+	}
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+	.header .logo {
+
+	}
+}

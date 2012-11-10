@@ -1,0 +1,348 @@
+
+/* created date: 27-10-12 by balaji*/
+/* reset.css */
+html {margin:0;padding:0;border:0; overflow-y: scroll; /*	-webkit-font-smoothing: antialiased;*/ }
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {margin:0;padding:0;border:0;font-weight:inherit;vertical-align:baseline;}
+article, aside, dialog, figure, footer, header, hgroup, nav, section {display:block;}
+body {line-height:1.5;background:white;}
+table {border-collapse:separate;border-spacing:0;}
+caption, th, td {text-align:left;font-weight:normal;float:none !important;}
+table, th, td {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:'';}
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+:focus {outline:0;}
+body{ 
+	margin: 0; 
+	overflow: auto;
+	padding: 0;
+	-webkit-transition: all 200ms ease-out;
+	-moz-transition: all 200ms ease-out;
+	transition: all 200ms ease-out;
+}
+@font-face 
+{
+	font-family: 'HelveticaNeue-Medium';
+	src: url('fonts/HelveticaNeue-Medium.eot');
+	src: url('fonts/HelveticaNeue-Medium.ttf') format('truetype'),
+		 url('fonts/HelveticaNeue-Medium.otf') format("opentype"),
+		 url('fonts/HelveticaNeue-Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face 
+{
+	font-family: 'HelveticaBold';
+	src: url('fonts/HelveticaBold.eot');
+	src: url('fonts/HelveticaBold.ttf') format('truetype'),
+		 url('fonts/HelveticaBold.otf') format("opentype"),
+		 url('fonts/HelveticaBold.svg') format('svg'),
+		 url('fonts/HelveticaBold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+.font_helevetica_med{
+	font-family: "HelveticaNeue-Medium", Sans-Serif;
+}
+.font_helevetica_bold{
+	font-family: "HelveticaBold", Sans-Serif;
+}
+
+body{
+	font-family: "HelveticaNeue-Medium", Sans-Serif;
+	min-height: 500px;
+	color: #464646;
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+a{
+	text-decoration: none;
+}
+.tdu{
+	text-decoration: underline;
+}
+ul,li,h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+}
+ul,li{
+	list-style: none;
+}
+.fl{
+	float: left !important;
+}
+.fr{
+	float: right !important;
+}
+.cl{
+	clear: both !important;
+	line-height: 0;
+}
+.bdr_none{
+	border: 0 none !important;
+}
+
+.pos_ab{
+	position: absolute;
+}
+.pos_rel{
+	position: relative;
+}
+
+.tac{
+	text-align: center;
+}
+.tr{
+	text-align: right;
+}
+.tl{
+	text-align: left;
+}
+
+.f12{
+	font-size: 12px;
+}
+.f13{
+	font-size: 13px;
+}
+.f14{
+	font-size: 14px;
+}
+
+.h40{
+	height: 40px;
+}
+
+.w275{
+	width: 275px !important;
+}
+.w560{
+	width: 560px;
+}
+/* styles for margin */
+.mt8{
+	margin-top: 8px;
+}
+.mt10{
+	margin-top: 10px;
+}
+.mt20{
+	margin-top: 20px;
+}
+
+.mr10{
+	margin-right: 10px;
+}
+.mr20{
+	margin-right: 20px !important;
+}
+
+.mb10{
+	margin-bottom: 10px;
+}
+.mb20{
+	margin-bottom: 20px;
+}
+
+.ml10{
+	margin-left: 10px;
+}
+.ml20{
+	margin-left: 20px;
+}
+
+.mtb10{
+	margin: 10px 0;
+}
+/* end styles for margin */
+
+/* styles for padding */
+.ptb10{
+	padding: 10px 0;
+}
+.plr10{
+	padding: 0 10px;
+}
+.p10{
+	padding: 10px;
+}
+/*end styles for padding*/
+
+/* start: styles for default colors */
+.c95{
+	color: #959595;
+}
+.c_green{
+	color: #8BA431;
+}
+.c_orange{
+	color: #D25018;
+}
+.c_yellow{
+	color: #FFC723;
+}
+.c_white{
+	color: #ffffff;
+}
+.c_blue{
+	color: #196e9b;
+}
+
+.bg_white{
+	background: #ffffff;
+}
+.bg_green{
+	background: #8ba431;
+}
+.bg_blue{
+	background: #186d9b;
+}
+.bg_yellow{
+	background: #ffc709;
+}
+.bg_orange{
+	background: #d25018;
+}
+
+.hide{
+	display: none !important;
+}
+.show{
+	display: block !important;
+}
+
+.boxsdw0{
+	-webkit-box-shadow: 0 0 0;
+	-moz-box-shadow: 0 0 0;
+	box-shadow: 0 0 0;
+}
+/* end:styles for default colors */
+
+/*error message styles*/
+.pio .error_msg{ 
+	font-size: 12px; 
+	text-align: left;
+	color: #BA3535;
+	display: block;
+	margin-top: 2px;
+}
+.pio .info.error{
+	background: url("images/warning.png") left center no-repeat;
+	color: #BA3535;
+	padding-left: 18px;
+}
+.pio .info.success{
+	background: url("images/success.png") left center no-repeat;
+	color: #187C12;
+	padding-left: 18px;
+}
+input[type="text"],input[type="password"]{
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.pio input.text{
+	padding: 3px 18px 2px 4px;
+	height: 14px;
+	font-size: 12px;
+	margin: 0;
+	border: 1px solid #ffffff;
+	box-shadow: 0 1px 1px #747474;
+}
+.pio input.input_long{
+	color: #646464;
+	font-size: 12px;
+/*    line-height: 18px;*/
+	padding: 3px 18px 3px 5px;
+	width: 248px;
+	background: #dcdcdc;
+	border: 1px solid transparent;
+	-webkit-box-shadow: 0 0 0;
+	-moz-box-shadow: 0 0 0;
+	box-shadow: 0 0 0;
+
+}
+.pio input.btn_submit,
+.pio a.btn_submit{
+	background: url(images/sprite_hdr.png) repeat-x 0 -64px;
+	color: #464646;
+	cursor: pointer;
+	font-size: 12px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	height: 20px;
+	line-height: 16px;
+	border: 0 none;
+	border-top: 1px solid #6C6C6C;
+	padding: 2px 12px;
+}
+.pio input.btn_submit:hover,
+.pio input.btn_submit:active{
+	color: #000000;
+}
+.pio input.text:focus{
+	border: 1px solid #56B4EF;
+	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, .05),0 0 8px rgba(82, 168, 236, .6);
+	-moz-box-shadow: inset 0 1px 3px rgba(0,0,0,.05),0 0 8px rgba(82,168,236,.6);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, .05),0 0 8px rgba(82, 168, 236, .6);
+}
+.pio a.btn_submit{
+	font-size: 12px !important;
+	padding: 3px 8px;
+	color: #464646 !important;
+	font-weight: normal;
+}
+.pio .buttons{
+	background: url(images/sprite_hdr.png) repeat-x 0 -90px;
+	height: 30px;
+	color: #ffffff;
+	border: 0 none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.pio .input_label{
+	position: absolute;
+	font-size: 12px;
+	top: 2px;
+	left: 6px;
+	color: #c8c8c8;
+	cursor: auto;
+}
+.pio .line{
+	background: url("images/sprite_hdr.png") no-repeat 0 -45px;
+	width: 2px;
+	margin: 0 6px 0 8px;
+}
+.pio .long_label .input_label{
+/*	top: 5px;*/
+	color: #afafaf;
+} 
+.pio .button_fld input{
+	height: 28px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.pio .box{
+	background: #ffffff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 0 14px 1px rgba(0, 0, 0, 0.08);
+	-moz-box-shadow: 0 0 14px 1px rgba(0,0,0,0.08);
+	box-shadow: 0 0 14px 1px rgba(0, 0, 0, 0.08);
+}
+.pio .middle_ca h1{
+	font-size: 30px;
+	margin-bottom: 5px;
+}
+.pio .main_hdr{
+	border-bottom: 1px solid #646464;
+}
+
